@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 340" role="img" aria-label="Martins e Pellini Advogados e Consultores">
+  <defs>
+    <!-- Gold vertical gradient -->
+    <linearGradient id="gv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FFF0A0"/>
+      <stop offset="30%" stop-color="#F0CC55"/>
+      <stop offset="65%" stop-color="#C9A030"/>
+      <stop offset="100%" stop-color="#7A5810"/>
+    </linearGradient>
+    <!-- Gold horizontal gradient -->
+    <linearGradient id="gh" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#5A3C00"/>
+      <stop offset="25%"  stop-color="#C9A84C"/>
+      <stop offset="50%"  stop-color="#F8E07A"/>
+      <stop offset="75%"  stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#5A3C00"/>
+    </linearGradient>
+    <!-- MP letters gradient (richer) -->
+    <linearGradient id="gmp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FFF5B0"/>
+      <stop offset="35%" stop-color="#E8C040"/>
+      <stop offset="70%" stop-color="#B08820"/>
+      <stop offset="100%" stop-color="#6A4A08"/>
+    </linearGradient>
+    <!-- Background radial -->
+    <radialGradient id="rbg" cx="50%" cy="42%" r="62%" gradientUnits="userSpaceOnUse" x2="540" y2="340">
+      <stop offset="0%"  stop-color="#1C1400"/>
+      <stop offset="50%" stop-color="#0C0C08"/>
+      <stop offset="100%" stop-color="#050504"/>
+    </radialGradient>
+    <!-- Bottom-left ambient glow -->
+    <radialGradient id="gl" cx="0" cy="1" r="1">
+      <stop offset="0%"   stop-color="#C9A030" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#C9A030" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Bottom-right ambient glow -->
+    <radialGradient id="gr" cx="1" cy="0.9" r="0.7">
+      <stop offset="0%"   stop-color="#C9A030" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C9A030" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Soft glow filter -->
+    <filter id="fg" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Subtle glow for text -->
+    <filter id="ft" x="-8%" y="-8%" width="116%" height="116%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ═══ BACKGROUND ═══ -->
+  <rect width="540" height="340" fill="url(#rbg)"/>
+  <rect width="540" height="340" fill="url(#gl)"/>
+  <rect width="540" height="340" fill="url(#gr)"/>
+
+  <!-- ═══ BOKEH / STARS ═══ -->
+  <g fill="#D4AF37" opacity="0.45">
+    <circle cx="48"  cy="22"  r="1.1"/>  <circle cx="190" cy="14"  r="0.9"/>
+    <circle cx="325" cy="10"  r="1.0"/>  <circle cx="430" cy="26"  r="1.2"/>
+    <circle cx="507" cy="15"  r="0.8"/>  <circle cx="74"  cy="50"  r="0.7"/>
+    <circle cx="148" cy="36"  r="1.0"/>  <circle cx="272" cy="30"  r="0.8"/>
+    <circle cx="388" cy="19"  r="0.9"/>  <circle cx="472" cy="46"  r="1.0"/>
+    <circle cx="520" cy="36"  r="0.7"/>  <circle cx="32"  cy="82"  r="0.8"/>
+    <circle cx="498" cy="75"  r="0.9"/>  <circle cx="162" cy="65"  r="0.7"/>
+    <circle cx="530" cy="90"  r="0.6"/>  <circle cx="90"  cy="100" r="0.5"/>
+  </g>
+  <!-- 4-pointed sparkles -->
+  <g fill="#FFF8C0" opacity="0.65">
+    <path d="M432 24 L433.5 19 L435 24 L440 25.5 L435 27 L433.5 32 L432 27 L427 25.5 Z"/>
+    <path d="M68  16 L69.2  12 L70.4 16 L74.4 17.2 L70.4 18.4 L69.2 22.4 L68 18.4 L64 17.2 Z"/>
+    <path d="M512 58 L513  55 L514 58 L517 59   L514 60   L513  63  L512 60  L509 59  Z"/>
+  </g>
+
+  <!-- ═══ GOLDEN LIGHT BEAMS ═══ -->
+  <!-- Bottom-left sweeping light -->
+  <g opacity="0.14" stroke-linecap="round">
+    <line x1="0" y1="340" x2="195" y2="55"  stroke="#D4AF37" stroke-width="55"/>
+    <line x1="0" y1="340" x2="145" y2="105" stroke="#D4AF37" stroke-width="24"/>
+    <line x1="0" y1="340" x2="85"  y2="155" stroke="#D4AF37" stroke-width="11"/>
+  </g>
+  <!-- Bottom-right sweeping light -->
+  <g opacity="0.11" stroke-linecap="round">
+    <line x1="540" y1="325" x2="360" y2="62"  stroke="#D4AF37" stroke-width="46"/>
+    <line x1="540" y1="325" x2="420" y2="112" stroke="#D4AF37" stroke-width="20"/>
+  </g>
+
+  <!-- ═══ LADY JUSTICE SILHOUETTE ═══ -->
+  <g fill="url(#gv)" filter="url(#fg)">
+    <!-- Head -->
+    <ellipse cx="80" cy="68" rx="15" ry="17"/>
+    <!-- Crown / laurel -->
+    <path d="M65 59 Q67 50 72 53 Q75 45 80 47 Q85 45 88 53 Q93 50 95 59"
+          fill="none" stroke="url(#gv)" stroke-width="2"/>
+    <circle cx="80" cy="47" r="2.2" fill="url(#gv)"/>
+    <circle cx="72" cy="52" r="1.5"/>
+    <circle cx="88" cy="52" r="1.5"/>
+    <!-- Neck -->
+    <path d="M76 84 Q78 91 80 93 Q82 91 84 84 Z"/>
+    <!-- Main robe / body -->
+    <path d="M65 93 Q50 112 45 148 Q40 185 42 218 Q40 252 45 282
+             Q56 288 80 288 Q104 288 115 282
+             Q120 252 118 218 Q120 185 115 148 Q110 112 95 93
+             Q88 88 80 88 Q72 88 65 93 Z"/>
+    <!-- Left arm down -->
+    <path d="M46 148 Q35 162 32 182 Q30 198 34 208 Q42 212 52 200 Q58 182 60 160 Q62 147 54 136 Z"/>
+    <!-- Right arm raised (holding scales) -->
+    <path d="M114 144 Q120 122 128 102 Q134 86 138 74 L132 66
+             Q124 78 116 96 Q108 118 106 142 Z"/>
+    <!-- Robe drape details -->
+    <path d="M55 195 Q60 225 56 265" fill="none" stroke="url(#gv)" stroke-width="1.2" opacity="0.45"/>
+    <path d="M105 195 Q100 225 104 265" fill="none" stroke="url(#gv)" stroke-width="1.2" opacity="0.45"/>
+  </g>
+
+  <!-- Small scales in Justice's hand -->
+  <g stroke="url(#gv)" fill="url(#gv)" filter="url(#fg)">
+    <circle cx="136" cy="65" r="2"/>
+    <line x1="136" y1="67" x2="136" y2="76" stroke-width="1.2"/>
+    <line x1="126" y1="76" x2="146" y2="76" stroke-width="1.5"/>
+    <line x1="126" y1="76" x2="126" y2="85" stroke-width="1"/>
+    <line x1="146" y1="76" x2="146" y2="81" stroke-width="1"/>
+    <path d="M121 87 Q126 84 131 87" stroke-width="1.2" fill="none"/>
+    <path d="M141 83 Q146 80 151 83" stroke-width="1.2" fill="none"/>
+  </g>
+
+  <!-- ═══ DECORATIVE SCALE ICON (above MP letters) ═══ -->
+  <g stroke="url(#gv)" fill="url(#gv)" filter="url(#fg)">
+    <!-- Post & top ornament -->
+    <line x1="270" y1="40" x2="270" y2="70" stroke-width="2.2"/>
+    <polygon points="270,33 267,42 273,42"/>
+    <!-- Crossbar -->
+    <line x1="230" y1="70" x2="310" y2="70" stroke-width="2.5"/>
+    <!-- Centre fulcrum -->
+    <polygon points="270,70 265,84 275,84"/>
+    <!-- Left chain & pan -->
+    <line x1="234" y1="70" x2="234" y2="92" stroke-width="1.6"/>
+    <path d="M220 94 Q234 89 248 94 Q234 99 220 94 Z"/>
+    <!-- Right chain & pan (slightly raised = balance in motion) -->
+    <line x1="306" y1="70" x2="306" y2="86" stroke-width="1.6"/>
+    <path d="M292 88 Q306 83 320 88 Q306 93 292 88 Z"/>
+  </g>
+
+  <!-- ═══ MP LARGE LETTERS ═══ -->
+  <text
+    x="270" y="222"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="148"
+    font-weight="900"
+    fill="url(#gmp)"
+    filter="url(#ft)"
+    text-anchor="middle"
+    letter-spacing="-3">MP</text>
+
+  <!-- ═══ HORIZONTAL DIVIDER ═══ -->
+  <line x1="130" y1="240" x2="208" y2="240" stroke="url(#gh)" stroke-width="0.9"/>
+  <circle cx="270" cy="240" r="3.2" fill="#D4AF37"/>
+  <line x1="332" y1="240" x2="410" y2="240" stroke="url(#gh)" stroke-width="0.9"/>
+
+  <!-- ═══ MARTINS & PELLINI ═══ -->
+  <text
+    x="270" y="265"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="19.5"
+    font-weight="700"
+    fill="url(#gh)"
+    text-anchor="middle"
+    letter-spacing="5">MARTINS &amp; PELLINI</text>
+
+  <!-- Thin rule -->
+  <line x1="148" y1="276" x2="392" y2="276" stroke="#C9A84C" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- ═══ ADVOGADOS E CONSULTORES ═══ -->
+  <text
+    x="270" y="293"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="9.5"
+    fill="#C9A84C"
+    text-anchor="middle"
+    letter-spacing="3.5">&#x2022; ADVOGADOS E CONSULTORES &#x2022;</text>
+
+  <!-- ═══ LAUREL WREATH ═══ -->
+  <!-- Left leaves -->
+  <g fill="#C9A84C" opacity="0.78">
+    <path d="M262 306 Q255 302 249 306 Q253 312 262 306 Z"/>
+    <ellipse cx="246" cy="308" rx="10" ry="3.8" transform="rotate(-14 246 308)"/>
+    <ellipse cx="230" cy="313" rx="10" ry="3.8" transform="rotate(-28 230 313)"/>
+    <ellipse cx="214" cy="319" rx="9.5" ry="3.5" transform="rotate(-44 214 319)"/>
+    <ellipse cx="199" cy="326" rx="9"   ry="3.2" transform="rotate(-60 199 326)"/>
+    <ellipse cx="185" cy="333" rx="8"   ry="2.8" transform="rotate(-74 185 333)"/>
+    <ellipse cx="173" cy="338" rx="7"   ry="2.5" transform="rotate(-86 173 338)"/>
+    <!-- Inner row -->
+    <ellipse cx="238" cy="316" rx="7" ry="2.5" transform="rotate(-22 238 316)" opacity="0.6"/>
+    <ellipse cx="222" cy="322" rx="7" ry="2.4" transform="rotate(-38 222 322)" opacity="0.6"/>
+    <ellipse cx="207" cy="329" rx="6" ry="2.2" transform="rotate(-56 207 329)" opacity="0.6"/>
+    <!-- Stem arc -->
+    <path d="M264 312 Q225 318 168 342" stroke="#C9A84C" stroke-width="1.4" fill="none" opacity="0.4"/>
+  </g>
+  <!-- Right leaves (mirrored) -->
+  <g fill="#C9A84C" opacity="0.78">
+    <path d="M278 306 Q285 302 291 306 Q287 312 278 306 Z"/>
+    <ellipse cx="294" cy="308" rx="10" ry="3.8" transform="rotate(14 294 308)"/>
+    <ellipse cx="310" cy="313" rx="10" ry="3.8" transform="rotate(28 310 313)"/>
+    <ellipse cx="326" cy="319" rx="9.5" ry="3.5" transform="rotate(44 326 319)"/>
+    <ellipse cx="341" cy="326" rx="9"   ry="3.2" transform="rotate(60 341 326)"/>
+    <ellipse cx="355" cy="333" rx="8"   ry="2.8" transform="rotate(74 355 333)"/>
+    <ellipse cx="367" cy="338" rx="7"   ry="2.5" transform="rotate(86 367 338)"/>
+    <!-- Inner row -->
+    <ellipse cx="302" cy="316" rx="7" ry="2.5" transform="rotate(22 302 316)" opacity="0.6"/>
+    <ellipse cx="318" cy="322" rx="7" ry="2.4" transform="rotate(38 318 322)" opacity="0.6"/>
+    <ellipse cx="333" cy="329" rx="6" ry="2.2" transform="rotate(56 333 329)" opacity="0.6"/>
+    <!-- Stem arc -->
+    <path d="M276 312 Q315 318 372 342" stroke="#C9A84C" stroke-width="1.4" fill="none" opacity="0.4"/>
+  </g>
+  <!-- Centre bow / knot -->
+  <g fill="#D4AF37" opacity="0.9">
+    <ellipse cx="270" cy="310" rx="10" ry="6"/>
+    <path d="M270 310 Q260 320 252 316 Q260 310 270 310 Z" fill="#C9A030" opacity="0.75"/>
+    <path d="M270 310 Q280 320 288 316 Q280 310 270 310 Z" fill="#C9A030" opacity="0.75"/>
+  </g>
+</svg>
