@@ -192,6 +192,17 @@ section { padding: 104px 0; }
     text-transform: uppercase;
     color: var(--gold);
 }
+.logo__placeholder {
+    font-family: var(--ff-body);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px dashed rgba(201,168,76,0.4);
+    padding: 8px 16px;
+    border-radius: var(--r);
+}
 
 /* Nav */
 .nav__list {
